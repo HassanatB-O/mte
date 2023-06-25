@@ -170,6 +170,17 @@ button{
     overflow-x: scroll;
     margin: 1rem;
 }
+.power--growth--slider::-webkit-scrollbar{
+    height: 4px;
+}
+.power--growth--slider::-webkit-scrollbar-track{
+    background: #F4F4F4;
+}
+.power--growth--slider::-webkit-scrollbar-thumb{
+    background: #26B166;
+    border-radius: 8px;
+    cursor: pointer;
+}
 .growth--section{
     padding: 2rem;
     border-radius: 1.625rem;
@@ -382,5 +393,12 @@ ion-icon.close--menu--icon{
     }
     .no--display--mobile, .no--display--tablet{
         display: none;
+    }
+    .topics--text{
+        font-size: 1.5rem;
+    }
+    .maiden--edition span{
+        margin-right: 0rem;
+        font-size: 1rem;
     }
 }
