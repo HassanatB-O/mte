@@ -113,6 +113,7 @@ button{
 .card--one{
     background: linear-gradient(180deg, #C1F0FF 0%, #00C1FE 100%);
     transform: rotate(-18.09deg);
+   
 }
 .card--two{
     background: linear-gradient(180deg, #A7FFCF 0%, #26B166 100%);
@@ -320,6 +321,9 @@ ion-icon.close--menu--icon{
     .merch--grid--section{
         width: 80%;
         margin: 0 auto;
+    }
+    .about--header, .meet--speakers h1, .sponsors--section--header, .merch--sales--header{
+        font-size: 2rem;
     }
     .nav--list{
         display: none;
