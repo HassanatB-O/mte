@@ -60,8 +60,10 @@ button{
     text-transform: uppercase;
     padding: 0.5rem 1rem;
     font-size: 1.2rem;
-    text-align: center;
     position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
     width: 100%;
 }
 .maiden--edition span{
@@ -70,14 +72,14 @@ button{
 .maiden--edition.green{
     position: absolute;
     background-color: #26B166;
-    transform: rotate(3.15deg);
+    transform: rotate(5.44deg);
     color: #FFFFFF;
 }
 .maiden--edition.blue{
     position: absolute;
     background-color: #42D2FF;
     color: #FFFFFF;
-    transform: rotate(-3.44deg);
+    transform: rotate(-5.44deg);
 }
 .about--section{
     margin: 7rem;
@@ -377,5 +379,8 @@ ion-icon.close--menu--icon{
     }
     .become--volunteer p, .footer--list p, .copyright--text p{
         margin-top: 1rem;
+    }
+    .no--display--mobile, .no--display--tablet{
+        display: none;
     }
 }
