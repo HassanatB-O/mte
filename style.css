@@ -103,32 +103,24 @@ button{
     font-weight: 700;
     text-align: center;
 }
-.card--one{
-    background: linear-gradient(180deg, #C1F0FF 0%, #00C1FE 100%);
-    border-radius: 20px;
-    transform: rotate(-18.09deg);
-    padding: 1rem 2rem;
+.card{
     display: flex;
     flex-direction: column;
+    padding: 1rem 2rem;
+    border-radius: 20px;
     justify-content: space-evenly;
+}
+.card--one{
+    background: linear-gradient(180deg, #C1F0FF 0%, #00C1FE 100%);
+    transform: rotate(-18.09deg);
 }
 .card--two{
     background: linear-gradient(180deg, #A7FFCF 0%, #26B166 100%);
-    border-radius: 20px;
     transform: rotate(-4.29deg);
-    padding: 1rem 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
 }
 .card--three{
     background: linear-gradient(180deg, #FFEBB7 0%, #FFB800 100%);
-    border-radius: 20px;
     transform: rotate(18.09deg);
-    padding: 1rem 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
 }
 .meet--speakers{
     text-align: center;
@@ -228,10 +220,6 @@ button{
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 20px;
     margin: 2em 0;
-}
-.merch--img{
-    box-shadow: -3px 4px 0px #26B166;  
-    margin: 0; 
 }
 .got--questions{
     margin: 2rem auto 0;
