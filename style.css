@@ -6,7 +6,7 @@ img{
     max-width: 100%;
 }
 .header--div, .footer{
-    background-image: url("Image/Rectangle\ 1.svg");
+    background-image: url("Image/Rectangle\ 1.webp");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 3em 7em;
@@ -133,6 +133,35 @@ button{
     color: #383838;
     font-weight: 700;
 }
+.speakers--line--up{
+    padding: 2rem 7rem;
+    margin: auto;
+}
+.speaker--image--center{
+    position: relative;
+}
+.speaker--image--left{
+    position: absolute;
+    filter: grayscale(100%);
+}
+.speaker--image--left.one{
+    left: 30%;
+}
+.speaker--image--left.two{
+    left: 20%;
+}
+.speaker--image--left.three{
+    left: 10%;
+}
+.speaker--image--left.four{
+    right: 10%;
+}
+.speaker--image--left.five{
+    right: 20%;
+}
+.speaker--image--left.six{
+    right: 30%;
+}
 .meet--speakers--p{
     color:#6D6D6D;
     margin: 1em 0.5em;
@@ -142,7 +171,7 @@ button{
     padding: 3em 7em;
 }
 .topics--bg--section{
-    background-image: url(Image/topics\ bg.svg);
+    background-image: url(Image/topics\ bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 3em;
@@ -287,6 +316,16 @@ ion-icon.hamburger, ion-icon.close--menu--icon{
     border-bottom-left-radius: .5rem;
     border-bottom-right-radius: .5rem;
     display: none;
+    animation: slide-down 1s linear both;
+    transition: .5s ease-in-out;
+}
+@keyframes slide-down{
+    0%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }
 ion-icon.close--menu--icon{
     float: right;
@@ -358,6 +397,9 @@ ion-icon.close--menu--icon{
         max-width: 100%;
         margin: 0 auto;
         height: 370px;
+    }
+    .speaker--image--left{
+        display: none;
     }
     .power--growth--slider{
         flex-direction: column;
