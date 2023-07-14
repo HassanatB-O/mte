@@ -18,6 +18,14 @@ nav ul{
     margin: 0 auto;
     gap: 20px;
 }
+li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+a{
+   color: #FFFFFF;
+   text-decoration: none;
+}
 .nav--menu--mobile{
     background-color: white;
     position: absolute;
