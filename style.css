@@ -25,6 +25,14 @@ nav ul{
     gap: 20px;
     cursor: pointer;
 }
+li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+a{
+   color: #FFFFFF;
+   text-decoration: none;
+}
 .mte--header--text{
     width: fit-content;
     margin: 3rem auto;
