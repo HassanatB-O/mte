@@ -1,6 +1,7 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Codec Pro';
 }
 img{
     max-width: 100%;
@@ -22,6 +23,7 @@ nav ul{
     display: flex;
     margin: 0 auto;
     gap: 20px;
+    cursor: pointer;
 }
 .mte--header--text{
     width: fit-content;
@@ -95,6 +97,7 @@ button{
 .about--header{
     color: #383838;
     font-size: 3.75rem;
+    font-family: 'Monument Extended';
 }
 .about--cards{
     display: flex;
