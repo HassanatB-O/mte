@@ -150,7 +150,6 @@ button{
 .meet--speakers h1{
     font-size: 3.5em;
     color: #383838;
-    font-weight: 700;
     font-family: 'Monument Extended';
 }
 .speakers--line--up{
@@ -262,7 +261,7 @@ button{
 .sponsors--section--header, .merch--sales--header{
     color: #383838;
     margin: 0.5em 0;
-    font-size: 3.5em;
+    font-size: 3em;
     font-family: 'Monument Extended';
 }
 .sponsors--line--up{
@@ -276,6 +275,9 @@ button{
     background-color: #FAFAFA;
     border-radius: 0.625rem;
     width: fit-content;
+}
+.sponsors--logo img{
+    filter: brightness(0);
 }
 .merch--sales--section{
     text-align: center;
@@ -308,11 +310,18 @@ button{
 }
 .mte--footer--logo{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 .footer--top--left, .footer--top--right{
     display: flex;
     gap: 20px;
+}
+.footer--bottom--left{
+    display: flex;
+    align-items: center;
+}
+.footer--bottom--left p{
+    margin-right: .5rem;
 }
 ion-icon{
     background-color: #26B166;
@@ -364,6 +373,9 @@ ion-icon.close--menu--icon{
 }
 .footer--bottom--logos{
     gap: .8em;
+}
+.become--volunteer p, .footer--list p, .copyright--text p{
+    margin-bottom: 1rem;
 }
 @media screen and (max-width: 950px){
     .header--div, .footer, .got--questions, .sponsors--section, .topics--section, .merch--sales--section, .about--section{
