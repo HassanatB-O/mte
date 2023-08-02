@@ -1,0 +1,84 @@
+.header--div{
+    background-image: none;
+}
+nav ul{
+    color: #000000;
+}
+a{
+   color: #000000;
+   text-decoration: none;
+}
+.header--div, .grid--section{
+    padding: 3em 7em;
+}
+.grid--layout{
+    display: grid;
+    margin: 5rem 0;
+    grid-template-columns:  repeat(4, 1fr);
+    grid-gap: 80px;
+}
+.grid--text--p{
+    color:#6D6D6D;
+    text-align: center;
+    margin: 1em 0.5em;
+}
+.team--row{
+    display: grid;
+    grid-gap: 80px;
+}
+.team--row.one{
+    margin-top: 5rem;
+}
+.team--details{
+    height: fit-content;
+    position: relative;
+}
+.team--details img{
+    position: relative;
+    border: 1px solid #FFB800;
+    object-fit: cover;
+    border-radius: 0.75rem 5.25rem 0.75rem 0.75rem;
+    box-shadow: 10px 10px 0px 6px  #FFB800;
+}
+.team--member h3{
+    font-family: 'Monument Extended';
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+.team--member{
+    background: linear-gradient( rgba(38, 177, 102, 0.05) , rgba(38, 177, 102, 0.3), rgba(38, 177, 102, 1));
+    padding: 2rem 1rem ;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #FFFFFF;
+    width: 100%;
+    border-radius: 0 0 0.75rem 0.75rem;
+}
+.grid--header{
+    font-size: 3.5em;
+    text-align: center;
+    font-family: 'Monument Extended';
+    color: #383838;
+    font-weight: 700;
+}
+.marquee{
+    margin: 5rem 0;
+}
+@media screen and (max-width: 950px){
+    .header--div, .footer, .got--questions{
+        padding: 3rem 4rem;
+    }
+}
+@media screen and (max-width: 650px) {
+    .header--div, .footer, .got--questions{
+        padding: 1rem;
+    }
+    ion-icon.hamburger{
+        display: block;
+        color: #000000;
+    }
+    .grid--section{
+        padding: 2rem;
+    }
+}
