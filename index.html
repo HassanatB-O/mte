@@ -21,7 +21,11 @@
                 <a href="Components/team.html">
                     <li>team</li>
                 </a>
+                <li>shop</li>
             </ul>
+            <div>
+                <button class="buy--tickets mobile">buy ticket</button>
+            </div>
             <div>
                 <ion-icon name="reorder-three-outline" class="hamburger"></ion-icon>
             </div>
@@ -37,21 +41,26 @@
                     <a href="Components/team.html">
                         <li>team</li>
                     </a>
+                    <li>shop</li>
                 </ul>
+                <div>
+                    <button class="buy--tickets">buy ticket</button>
+                </div>
             </div>
         </nav> 
+       <div class="header--text--padded">
         <div class="mte--header--text">
-            <div>
-                <img src="Image/MUSLIM.svg" alt="">
+            <div class="desktop--header">
+               <img src="Image/header--text--desktop.png" alt="">
             </div>
-            <div>
-                <img src="Image/TECH.svg" alt="">
-                <img src="Image/EXPO.svg" alt="" class="tech--text--img">
+            <div class="mobile--header">
+                <img src="Image/header--text--mobile.png" alt="">
             </div>
         </div>
+       </div>
         <p>lagos, nigeria</p>
         <div class="buttons-div">
-            <button class="reserve--spot">reserve a spot</button>
+            <button class="reserve--spot">buy tickets</button>
             <button class="become--sponsor">become a sponsor</button>
         </div>
    </header>
@@ -77,7 +86,7 @@
             Techie, Tech enthusiast + Nigerian?
         </h1>
         <p class="about--text">
-            That's the perfect combination to reserve a spot and come and experience the <span class="green-text">first ever</span> gathering of IDANs in the industry.
+            That's the perfect combination to reserve a spot and come and experience the <span class="green--text">first ever</span> gathering of IDANs in the industry.
         </p>
     </div>
     <div class="about--cards">
@@ -96,6 +105,9 @@
     </div>
    </section>
    <section class="meet--speakers">
+    <div class="coming--soon">
+        <h2>Coming Soon!</h2>
+    </div>
     <h1>Meet our speakers</h1>
     <p class="meet--speakers--p">The real IDANs making things happen in the tech space.</p>
     <div class="speakers--line--up">
@@ -122,7 +134,7 @@
         </div>
     </div>
     <a href="Components/speakers.html">
-        <button class="see--all">
+        <button class="see--all" style="display: none;">
         see all
         </button>
     </a>
@@ -264,16 +276,22 @@
     </h1>
     <div class="merch--grid--section">
         <div>
-            <img src="Image/merch--shirt--one.webp" alt="">
+            <img src="Image/mte--hoodie.webp" alt="">
         </div>
         <div>
-            <img src="Image/merch--cap--white.webp" alt="">
+            <img src="Image/mte--notepad.webp" alt="">
         </div>
         <div>
-            <img src="Image/merch--shirt--two.webp" alt="">
+            <img src="Image/mte--tee--black.webp" alt="">
         </div>
         <div>
-            <img src="Image/merch--black--cap.webp" alt="">
+            <img src="Image/mte--tee--white.webp" alt="">
+        </div>
+        <div>
+            <img src="Image/mte--tote--bag.webp" alt="">
+        </div>
+        <div>
+            <img src="Image/mte--waterbottle.webp" alt="">
         </div>
     </div>
     <button class="see--all">
@@ -297,18 +315,23 @@
                     <img src="Image/EXPO small.svg" alt="" style="margin-left: 10px;">
                 </div>
             </div>
-            <div class="copyright--text">
-                <p>Copyright &copy; 2023 Muslim Tech Expo</p>
-                <p>All rights reserved</p>
-            </div>
         </aside>
+        <div>
+            <button class="buy--tickets mobile">buy ticket</button>
+        </div>
         <aside class="footer--top--right">
             <div class="become--volunteer">
-                <p>Become a volunteer</p>
-                <p>Become a volunteer</p>
+                <a href="">
+                    <p>Reserve a spot</p>
+                </a>
+                <a href="">
+                    <p>Become a volunteer</p>
+                </a>
             </div>
             <div class="footer--list">
-                <p>Team</p>
+                <a href="Components/team.html">
+                    <p>Team</p>
+                </a>
                 <p>FAQs</p>
             </div>
         </aside>
@@ -316,10 +339,14 @@
     <hr>
     <div class="footer--bottom">
         <div class="footer--bottom--left">
-                <p>Powered by: </p> 
-                <div>
-                    <img src="Image/barn--logo.png" alt="">
-                </div>
+            <p>Powered by: </p> 
+            <div>
+                <img src="Image/barn--logo.png" alt="">
+            </div>
+        </div>
+        <div class="copyright--text">
+            <p>Copyright &copy; 2023 Muslim Tech Expo</p>
+            <p>All rights reserved</p>
         </div>
         <div class="footer--bottom--logos">
             <div class="facebook--logo">
@@ -340,12 +367,16 @@
                 <ion-icon name="logo-twitter"></ion-icon>
             </div>
           </a>
-            <div class="tiktok--logo">
-                <ion-icon name="logo-tiktok"></ion-icon>
-            </div>
-            <div class="youtube--logo">
-                <ion-icon name="logo-youtube"></ion-icon>
-            </div>
+          <a href="https://www.tiktok.com/@muslimtechexpo">
+              <div class="tiktok--logo">
+                  <ion-icon name="logo-tiktok"></ion-icon>
+              </div>
+          </a>
+            <a href="https://www.youtube.com/channel/UCr6B9ytPxQomKGckCEOhrXQ">
+                <div class="youtube--logo">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </div>
+            </a>
         </div>
     </div>
    </footer>
