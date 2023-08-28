@@ -11,6 +11,10 @@ a{
 .header--div, .grid--section{
     padding: 3em 7em;
 }
+.buy--tickets.green{
+    color: #26B166;
+    border: 0.863622px solid #26B166;
+}
 .grid--text--p{
     color:#6D6D6D;
     text-align: center;
@@ -26,7 +30,11 @@ a{
 .grid--layout{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
     place-items: center;
+}
+.footer a{
+    color: #FFFFFF;
 }
 @media screen and (max-width: 950px){
     .header--div, .footer, .got--questions{
