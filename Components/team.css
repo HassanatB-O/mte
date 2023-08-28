@@ -11,6 +11,10 @@ a{
 .header--div, .grid--section{
     padding: 3em 7em;
 }
+.buy--tickets.green{
+    color: #26B166;
+    border: 0.863622px solid #26B166;
+}
 .grid--layout{
     display: grid;
     margin: 5rem 0;
@@ -46,8 +50,8 @@ a{
     margin-bottom: 1rem;
 }
 .team--member{
-    background: linear-gradient( rgba(38, 177, 102, 0.05) , rgba(38, 177, 102, 0.3), rgba(38, 177, 102, 1));
-    padding: 2rem 1rem ;
+    background: linear-gradient( rgba(38, 177, 102, 0.07) , rgba(38, 177, 102, 0.3), rgba(38, 177, 102, 1));
+    padding: 1rem ;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -65,20 +69,64 @@ a{
 .marquee{
     margin: 5rem 0;
 }
-@media screen and (max-width: 950px){
-    .header--div, .footer, .got--questions{
+.footer a{
+    color: #FFFFFF;
+}
+@media screen and (max-width: 1250px){
+    .header--div, .footer, .grid--section, .got--questions{
         padding: 3rem 4rem;
+    }
+    .grid--layout, .team--row{
+        grid-gap: 40px;
+    }
+    .team--row.one{
+        margin-top: 4rem;
+    }
+    .team--member h3{
+        font-size: 1rem;
+    }
+    .no--display--mobile, .no--display--tablet{
+        display: none;
     }
 }
 @media screen and (max-width: 650px) {
     .header--div, .footer, .got--questions{
         padding: 1rem;
     }
+    .buy--ticket{
+        display: none;
+    }
     ion-icon.hamburger{
         display: block;
         color: #000000;
     }
+    .grid--header{
+        font-size: 2em;
+    }
     .grid--section{
         padding: 2rem;
+    }
+    .grid--layout{
+        grid-template-columns: 1fr;
+    }
+    .grid--layout, .team--row{
+        grid-gap: 40px;
+    }
+    .team--row.one{
+        margin-top: 0rem;
+    }
+    .team--member h3{
+        font-size: 1rem;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 950px) {
+    .header--div, .footer, .got--questions{
+        padding: 1rem;
+    }
+    .grid--layout{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .team--row.one{
+        margin-top: 0rem;
     }
 }
