@@ -23,6 +23,7 @@ img{
 nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 nav ul{
     color: #FFFFFF;
@@ -41,12 +42,18 @@ a{
    color: #FFFFFF;
    text-decoration: none;
 }
+.header--text--padded{
+    padding: 0em 10em;
+}
 .mte--header--text{
     width: fit-content;
-    margin: 3rem auto;
-    padding: 2rem;
+    margin: 3rem auto 1rem auto;
+    padding: 3rem;
     border-radius: 1.5rem;
     border: 1.6px solid #42D2FF;
+}
+.mobile--header{
+    display: none;
 }
 .tech--text--img{
     margin-left: 30px;
@@ -63,13 +70,22 @@ a{
     margin: 1rem auto;
     gap: 20px;
 }
+.buy--tickets{
+    background: transparent;
+    box-shadow: none;
+    border: 0.863622px solid #FFB800;
+    color: #FFB800;
+    width: 200px;
+}
 button{
-    padding: 0.75rem 1rem;
+    padding:  1rem;
     text-transform: uppercase;
     border-radius: 0.5rem;
     border: 0.863622px solid #26B166;
     box-shadow: -3px 4px 0px #26B166;
     cursor: pointer;
+    color: #000000;
+    font-size: 18px;
 }
 .reserve--spot, .see--all, .sponsors--section .become--sponsor{
     background-color: #FFB800;
@@ -81,7 +97,7 @@ button{
     position: relative;
     display: flex;
     text-align: center;
-    justify-content: space-between;
+    justify-content: space-between;    
     width: 100%;
 }
 .maiden--edition span{
@@ -99,6 +115,10 @@ button{
     color: #FFFFFF;
     transform: rotate(-5.44deg);
 }
+p{
+    font-size: 1.125rem;
+    line-height: 24px;
+}
 .about--section{
     margin: 7rem;
     padding: 5rem;
@@ -114,6 +134,13 @@ button{
     color: #383838;
     font-size: 3.5rem;
     font-family: 'Monument Extended';
+}
+.green--text{
+    background-color: #26B166;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    transform: rotate(5.731deg);
+    color: #FFFFFF;
 }
 .about--cards{
     display: flex;
@@ -131,10 +158,12 @@ button{
     border-radius: 20px;
     justify-content: space-evenly;
 }
+.card p{
+    font-size: 1.25rem !important;
+}
 .card--one{
     background: linear-gradient(180deg, #C1F0FF 0%, #00C1FE 100%);
     transform: rotate(-18.09deg);
-   
 }
 .card--two{
     background: linear-gradient(180deg, #A7FFCF 0%, #26B166 100%);
@@ -146,11 +175,28 @@ button{
 }
 .meet--speakers{
     text-align: center;
+    position: relative;
 }
 .meet--speakers h1{
     font-size: 3.5em;
     color: #383838;
     font-family: 'Monument Extended';
+}
+.coming--soon{
+    background: linear-gradient( rgba(38, 177, 102, 0.3), rgba(38, 177, 102, 1));
+    padding: 2rem 3rem;
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    font-family: 'Monument Extended';
+    border-radius: 21px;
+    width: fit-content;
+    display: flex;
+    margin: auto;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
 }
 .speakers--line--up{
     padding: 2rem 7rem;
@@ -194,7 +240,8 @@ button{
     background-repeat: no-repeat;
     background-size: cover;
     padding: 3em;
-    filter: grayscale(100%);
+    filter: grayscale(85%);
+    mix-blend-mode: luminosity;
     height: 470px;
     border-top-right-radius: 1.65em;
     border-bottom-right-radius: 1.65em;
@@ -241,6 +288,7 @@ button{
 .growth--section--details{
     color: #6D6D6D;
     text-transform: uppercase;
+    line-height: 18px;
 }
 .growth--section--header{
     color: #383838;
@@ -250,8 +298,9 @@ button{
 }
 .growth--section--text, .sponsors--section--text{
     color: #6D6D6D;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
     letter-spacing: 1px;
+    line-height: 18px;
 }
 .sponsors--section{
     display: grid;
@@ -260,7 +309,7 @@ button{
 }
 .sponsors--section--header, .merch--sales--header{
     color: #383838;
-    margin: 0.5em 0;
+    margin: 1em 0;
     font-size: 3em;
     font-family: 'Monument Extended';
 }
@@ -282,12 +331,20 @@ button{
 .merch--sales--section{
     text-align: center;
     padding: 1rem 7rem;
+    margin-bottom: 5rem;
 }
 .merch--grid--section{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
     margin: 2em 0;
+}
+.merch--grid--section img{
+    object-fit: cover;
+    border-radius: 11px;
+    border: 1px solid #26B166;
+    height: 200px;
+    box-shadow: -4px 4px 0px 4px  #26B166;
 }
 .got--questions{
     margin: 2rem auto 0;
@@ -308,9 +365,12 @@ button{
     align-items: center;
     margin: 1em 0;
 }
+.copyright--text{
+    color: #6D6D6D;
+}
 .mte--footer--logo{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 .footer--top--left, .footer--top--right{
     display: flex;
@@ -351,6 +411,9 @@ ion-icon.hamburger, ion-icon.close--menu--icon{
     animation: slide-down 1s linear both;
     transition: .5s ease-in-out;
 }
+.nav--list--mobile a{
+    color: #000000;
+}
 @keyframes slide-down{
     0%{
         transform: translateY(-10px);
@@ -385,6 +448,13 @@ ion-icon.close--menu--icon{
         flex-direction: column;
         width: 80%;
         gap: 20px;
+        margin-bottom: 2rem;
+    }
+    .desktop--header{
+        display: none;
+    }
+    .mobile--header{
+        display: block;
     }
     .tech--text--img{
         margin-left: 0px;
@@ -400,10 +470,19 @@ ion-icon.close--menu--icon{
         grid-template-columns: 1fr;
         text-align: center;
     }
+    .merch--sales--section{
+        margin-bottom: 0;
+    }
+    .merch--grid--section img{
+        height: 100px;
+    }
 }
 @media screen and (max-width: 650px) {
-    .header--div, .footer, .got--questions, .sponsors--section, .topics--section, .merch--sales--section{
+    .header--div, .footer, .got--questions, .sponsors--section, .topics--section, .merch--sales--section, .header--text--padded{
         padding: 1rem;
+    }
+    .mte--header--text{
+        padding: 1.5rem;
     }
     .merch--grid--section{
         width: 80%;
@@ -417,6 +496,9 @@ ion-icon.close--menu--icon{
     }
     ion-icon.hamburger{
         display: block;
+    }
+    .buy--tickets.mobile{
+        display: none;
     }
     .about--section{
         padding: 3rem 1rem;
@@ -457,8 +539,19 @@ ion-icon.close--menu--icon{
         grid-template-columns: 1fr;
         gap: 20px;
     }
+    .merch--grid--section img{
+        width: 80%;
+        height: 200px;
+    }
+    .merch--sales--section button{
+        margin-top: 1rem;
+    }
     .got--questions{
         width: 100%;
+    }
+    .coming--soon{
+        padding: 1.5rem;
+        font-size: 1.5rem;
     }
     .footer--top, .footer--bottom, .footer--top--left, .footer--top--right{
         flex-direction: column;
