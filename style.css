@@ -151,27 +151,14 @@ p{
     font-weight: 700;
     text-align: center;
 }
-.card{
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 2rem;
-    border-radius: 20px;
-    justify-content: space-evenly;
-}
-.card p{
-    font-size: 1.25rem !important;
-}
 .card--one{
-    background: linear-gradient(180deg, #C1F0FF 0%, #00C1FE 100%);
-    transform: rotate(-18.09deg);
+    transform: rotate(-13.09deg);
 }
 .card--two{
-    background: linear-gradient(180deg, #A7FFCF 0%, #26B166 100%);
-    transform: rotate(-4.29deg);
+    transform: rotate(7.29deg);
 }
 .card--three{
-    background: linear-gradient(180deg, #FFEBB7 0%, #FFB800 100%);
-    transform: rotate(18.09deg);
+    transform: rotate(13.09deg);
 }
 .meet--speakers{
     text-align: center;
@@ -296,7 +283,7 @@ p{
     line-height: 35px;
     margin: 0.5rem 0;
 }
-.growth--section--text, .sponsors--section--text{
+.growth--section--text, .sponsors--section--text p{
     color: #6D6D6D;
     margin: 1.5rem 0;
     letter-spacing: 1px;
@@ -460,7 +447,7 @@ ion-icon.close--menu--icon{
         margin-left: 0px;
     }
     .about--section{
-        margin: 4rem;
+        margin: 2rem;
     }
     .about--div{
         flex-direction: column;
@@ -513,7 +500,6 @@ ion-icon.close--menu--icon{
     .card--one, .card--two, .card--three{
         max-width: 100%;
         margin: 0 auto;
-        height: 370px;
     }
     .speaker--image--left{
         display: none;
