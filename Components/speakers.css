@@ -52,6 +52,9 @@ a{
     .grid--section{
         padding: 2rem;
     }
+    .grid--header{
+        font-size: 2rem;
+    }
     .grid--layout{
         grid-template-columns: 1fr;
     }
