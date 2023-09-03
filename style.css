@@ -431,6 +431,9 @@ ion-icon.close--menu--icon{
     .header--div, .footer, .got--questions, .sponsors--section, .topics--section, .merch--sales--section, .about--section{
         padding: 3rem 4rem;
     }
+    .header--div p{
+        margin: 0;
+    }
     .buttons-div{
         flex-direction: column;
         width: 80%;
