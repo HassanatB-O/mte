@@ -322,7 +322,7 @@ p{
 }
 .merch--grid--section{
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-gap: 20px;
     margin: 2em 0;
 }
@@ -330,7 +330,7 @@ p{
     object-fit: cover;
     border-radius: 11px;
     border: 1px solid #26B166;
-    height: 200px;
+    height: 250px;
     box-shadow: -4px 4px 0px 4px  #26B166;
 }
 .got--questions{
@@ -461,7 +461,7 @@ ion-icon.close--menu--icon{
         margin-bottom: 0;
     }
     .merch--grid--section img{
-        height: 100px;
+        width: 250px;
     }
 }
 @media screen and (max-width: 650px) {
@@ -526,8 +526,8 @@ ion-icon.close--menu--icon{
         gap: 20px;
     }
     .merch--grid--section img{
-        width: 80%;
-        height: 200px;
+        width: 250px;
+        height: 250px;
     }
     .merch--sales--section button{
         margin-top: 1rem;
