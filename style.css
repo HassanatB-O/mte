@@ -520,6 +520,7 @@ ion-icon.close--menu--icon{
         grid-template-columns: repeat(2, 1fr);
         place-items: center;
         align-items: center;
+        margin-top: 1.5rem;
     }
     .merch--grid--section{
         grid-template-columns: 1fr;
