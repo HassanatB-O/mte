@@ -72,6 +72,11 @@ a{
 .footer a{
     color: #FFFFFF;
 }
+ion-icon.team--linkedin{
+    background-color: #FFFFFF;
+    color: #26B166;
+    margin-bottom: .5rem;
+}
 @media screen and (max-width: 1250px){
     .header--div, .footer, .grid--section, .got--questions{
         padding: 3rem 4rem;
