@@ -47,7 +47,6 @@ a{
 .team--member h3{
     font-family: 'Monument Extended';
     text-transform: capitalize;
-    margin-bottom: 1rem;
 }
 .team--member{
     background: linear-gradient( rgba(38, 177, 102, 0.07) , rgba(38, 177, 102, 0.3), rgba(38, 177, 102, 1));
