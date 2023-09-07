@@ -269,7 +269,7 @@ p{
     padding: 2rem;
     border-radius: 1.625rem;
     flex: none;
-    width: 350px;
+    width: 400px;
     background-color: #FAFAFA;
 }
 .growth--section--details{
@@ -279,8 +279,8 @@ p{
 }
 .growth--section--header{
     color: #383838;
-    font-size: 2.25rem;
-    line-height: 35px;
+    font-size: 2.1rem;
+    line-height: 30px;
     margin: 0.5rem 0;
 }
 .growth--section--text, .sponsors--section--text p{
