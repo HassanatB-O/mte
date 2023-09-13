@@ -223,15 +223,13 @@ p{
     padding: 3em 7em;
 }
 .topics--bg--section{
-    background-image: url(Image/topics\ bg.webp);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(Image/topics\ bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 3em;
-    filter: grayscale(85%);
-    mix-blend-mode: luminosity;
+    filter: grayscale(100%);
     height: 470px;
-    border-top-right-radius: 1.65em;
-    border-bottom-right-radius: 1.65em;
+    border-radius: 1.65em;
     color: #FFFFFF;
 }
 .topics--header{
