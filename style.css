@@ -273,11 +273,12 @@ p{
 .growth--section--details{
     color: #6D6D6D;
     text-transform: uppercase;
+    font-size: 16px;
     line-height: 18px;
 }
 .growth--section--header{
     color: #383838;
-    font-size: 2.1rem;
+    font-size: 1.8rem;
     line-height: 30px;
     margin: 0.5rem 0;
 }
@@ -307,11 +308,10 @@ p{
 .sponsors--logo{
     padding: 1rem;
     background-color: #FAFAFA;
+    display: flex;
+    align-items: center;
     border-radius: 0.625rem;
     width: fit-content;
-}
-.sponsors--logo img{
-    filter: brightness(0);
 }
 .merch--sales--section{
     text-align: center;
