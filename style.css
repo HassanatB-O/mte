@@ -139,7 +139,8 @@ p{
     background-color: #26B166;
     border-radius: 2rem;
     padding: 0.5rem 1rem;
-    transform: rotate(5.731deg);
+    transform: rotate(-3.731deg);
+    display: inline-block;
     color: #FFFFFF;
 }
 .about--cards{
@@ -469,6 +470,10 @@ ion-icon.close--menu--icon{
     .header--div p{
         margin: 0;
     }
+    .topics--bg--section{
+        height: fit-content;
+        padding: 1em 2em;
+    }
     .mte--header--text{
         padding: 1.5rem;
     }
@@ -540,6 +545,7 @@ ion-icon.close--menu--icon{
     .coming--soon{
         padding: 1.5rem;
         font-size: 1.5rem;
+        margin-top: 40px;
     }
     .footer--top, .footer--bottom, .footer--top--left, .footer--top--right{
         flex-direction: column;
@@ -553,7 +559,7 @@ ion-icon.close--menu--icon{
         display: none;
     }
     .topics--text{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .maiden--edition span{
         margin-right: 0rem;
