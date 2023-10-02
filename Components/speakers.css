@@ -30,15 +30,37 @@ a{
 .grid--layout{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 30px;
+    grid-gap: 30px;
     place-items: center;
+    margin: 2em 0;
+}
+.grid--layout img{
+    object-fit: cover;
+  width: 100%;
+  max-height: 100;
 }
 .footer a{
     color: #FFFFFF;
 }
 @media screen and (max-width: 950px){
-    .header--div, .footer, .got--questions{
+    .header--div, .footer, .got--questions, .grid--section{
         padding: 3rem 4rem;
+    }
+    .speaker--div{
+        width: 300px;
+        height: 300px;
+    }
+    .speaker--profile{
+        width: 300px;
+    }
+    .speaker--profile h2{
+        font-size: 1rem;
+    }
+    .speaker--profile p{
+        font-size: .8rem;
+    }
+    .grid--layout{
+        grid-template-columns: 1fr 1fr;
     }
 }
 @media screen and (max-width: 650px) {
@@ -49,13 +71,20 @@ a{
         display: block;
         color: #000000;
     }
-    .grid--section{
-        padding: 2rem;
-    }
     .grid--header{
         font-size: 2rem;
     }
+    .grid--section{
+        padding: 2rem;
+    }
     .grid--layout{
         grid-template-columns: 1fr;
+    }
+    .speaker--div{
+        width: 350px;
+        height: 350px;
+    }
+    .speaker--profile{
+        width: 350px;
     }
 }
