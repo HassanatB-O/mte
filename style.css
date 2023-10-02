@@ -161,59 +161,21 @@ p{
 .card--three{
     transform: rotate(13.09deg);
 }
+.speaker--line--up{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+    padding: 3em;
+    align-items: center;
+    justify-content: center
+}
 .meet--speakers{
     text-align: center;
-    position: relative;
 }
 .meet--speakers h1{
     font-size: 3.5em;
     color: #383838;
     font-family: 'Monument Extended';
-}
-.coming--soon{
-    background: linear-gradient( rgba(38, 177, 102, 0.3), rgba(38, 177, 102, 1));
-    padding: 2rem 3rem;
-    font-size: 2.5rem;
-    color: #FFFFFF;
-    font-family: 'Monument Extended';
-    border-radius: 21px;
-    width: fit-content;
-    display: flex;
-    margin: auto;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-}
-.speakers--line--up{
-    padding: 2rem 7rem;
-    margin: auto;
-}
-.speaker--image--center{
-    position: relative;
-}
-.speaker--image--left{
-    position: absolute;
-    filter: grayscale(100%);
-}
-.speaker--image--left.one{
-    left: 30%;
-}
-.speaker--image--left.two{
-    left: 20%;
-}
-.speaker--image--left.three{
-    left: 10%;
-}
-.speaker--image--left.four{
-    right: 10%;
-}
-.speaker--image--left.five{
-    right: 20%;
-}
-.speaker--image--left.six{
-    right: 30%;
 }
 .meet--speakers--p{
     color:#6D6D6D;
@@ -461,6 +423,9 @@ ion-icon.close--menu--icon{
     }
     .merch--grid--section img{
         width: 200px;
+    }
+    .footer button{
+        margin: 1em 0;
     }
 }
 @media screen and (max-width: 650px) {
