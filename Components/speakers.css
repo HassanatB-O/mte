@@ -29,7 +29,7 @@ a{
 }
 .grid--layout{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
     place-items: center;
     margin: 2em 0;
@@ -78,7 +78,7 @@ a{
         padding: 2rem;
     }
     .grid--layout{
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
     .speaker--div{
         width: 350px;
