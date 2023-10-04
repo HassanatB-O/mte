@@ -447,7 +447,7 @@ ion-icon.close--menu--icon{
         padding: 1.5rem;
     }
     .speaker--line--up{
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
     .merch--grid--section{
         width: 80%;
