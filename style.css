@@ -135,6 +135,17 @@ p{
     border-radius: 1.625rem;
     background-color: #FAFAFA;
 }
+#about--details{
+    text-align: center;
+    margin: 10em 7em 3em 7em;
+}
+#about--details h1{
+    margin-bottom: .5em;
+}
+#about--details p{
+    font-size: 20px;
+    line-height: 30px;
+}
 .about--div{
     display: flex;
     gap: 50px;
@@ -445,6 +456,9 @@ ion-icon.close--menu--icon{
 @media screen and (max-width: 650px) {
     .header--div, .footer, .got--questions, .sponsors--section, .topics--section, .merch--sales--section, .header--text--padded{
         padding: 1rem;
+    }
+    #about--details{
+        margin: 6rem 1rem 0rem 1rem;
     }
     .header--div p{
         margin: 1em auto;
