@@ -28,7 +28,8 @@ a{
 }
 .team--row{
     display: grid;
-    grid-gap: 80px;
+    grid-column-gap: 60px;
+    grid-row-gap: 30px;
 }
 .team--row.one{
     margin-top: 5rem;
