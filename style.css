@@ -62,7 +62,17 @@ a{
     color: #FFFFFF;
     text-transform: uppercase;
     text-align: center;
-    margin: 1em 0 3em 0;
+    margin: 1em auto;
+    width: fit-content;
+}
+.lagos{
+    margin-bottom: 3rem !important;
+}
+.location--green{
+    background-color: #26B166;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    color: #FFFFFF;
 }
 .buttons-div{
     display: flex;
@@ -437,7 +447,10 @@ ion-icon.close--menu--icon{
         padding: 1rem;
     }
     .header--div p{
-        margin: 0;
+        margin: 1em auto;
+    }
+    .lagos{
+        margin-bottom: 0rem !important;
     }
     .topics--bg--section{
         height: fit-content;
