@@ -9,10 +9,15 @@ a{
    text-decoration: none;
 }
 .about--details{
-    text-align: center;
     padding: 3em 7em;
     animation: slide-up 1s linear both;
     transition: .5s ease-in-out;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.about--details--text{
+    width: 50%;
 }
 .about--header{
     margin-bottom: .5em;
@@ -20,6 +25,7 @@ a{
 .about--details p{
     font-size: 20px;
     line-height: 30px;
+    margin: .5rem 0;
 }
 @keyframes slide-up{
     0%{
@@ -33,16 +39,28 @@ a{
     color: #FFFFFF;
 }
 @media screen and (max-width: 950px){
-    .header--div, .footer, .got--questions{
+    .header--div, .footer, .got--questions, .about--details{
         padding: 3rem 4rem;
+    }
+    .about--details--text{
+        width: 80%;
     }
 }
 @media screen and (max-width: 650px) {
     .header--div, .footer, .got--questions, .about--details{
         padding: 1rem;
     }
+    .about--header{
+        text-align: center;
+    }
     ion-icon.hamburger{
         display: block;
         color: #000000;
+    }
+    .about--details{
+        flex-direction: column;
+    }
+    .about--details--text{
+        width: 100%;
     }
 }
