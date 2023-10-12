@@ -1,0 +1,66 @@
+.header--div{
+    background-image: none;
+}
+nav ul{
+    color: #000000;
+}
+a{
+   color: #000000;
+   text-decoration: none;
+}
+.faq--section{
+    padding: 1em 7em;
+}
+.about--header{
+    text-align: center;
+    font-weight: 400;
+}
+.faq--paragraph{
+    text-align: center;
+    color: #6D6D6D;
+}
+details{
+    margin: 1.5em 0;
+}
+summary{
+    font-size: 20px;
+    cursor: pointer;
+}
+summary::marker{
+    content: '';
+}
+details p{
+    font-size: 18px;
+    margin: .5em 0;
+    color: #6D6D6D;
+    animation: slide-down 1s linear both;
+    transition: .5s ease-in-out;
+}
+@keyframes slide-down{
+    0%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.footer a{
+    color: #FFFFFF;
+}
+@media screen and (max-width: 950px){
+    .header--div, .footer, .got--questions, .faq--section{
+        padding: 3rem 4rem;
+    }
+}
+@media screen and (max-width: 650px) {
+    .header--div, .footer, .got--questions, .faq--section{
+        padding: 1rem;
+    }
+    .about--header{
+        text-align: center;
+    }
+    ion-icon.hamburger{
+        display: block;
+        color: #000000;
+    }
+}
