@@ -18,7 +18,7 @@ a{
 .grid--text--p{
     color:#6D6D6D;
     text-align: center;
-    margin: 0.5em 0.5em;
+    margin: 1em 0.5em 0.2em 1em;
 }
 .grid--header{
     font-size: 3.5em;
